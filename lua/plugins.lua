@@ -1,5 +1,3 @@
--- [[ plugins.lua ]]
-
 local status, packer = pcall(require, "packer")
 if (not status) then
   print("packer is not installed")
@@ -7,20 +5,22 @@ if (not status) then
 end
 
 return require("packer").startup(function(use)
-  use "wbthomason/packer.nvim"
+  use "wbthomason/packer.nvim" -- plugins manager
   use "williamboman/mason.nvim"   
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
+  -- status line
   use {
     "nvim-lualine/lualine.nvim",
     requires = { "nvim-tree/nvim-web-devicons", opt = true }
   }
+  -- syntax highlighting
   use "tjdevries/colorbuddy.nvim"
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "mrjones2014/nvim-ts-rainbow"
+  use "mrjones2014/nvim-ts-rainbow" -- brackets colorizer
   use "windwp/nvim-ts-autotag"
   -- color themes
   use "svrana/neosolarized.nvim"
@@ -31,7 +31,7 @@ return require("packer").startup(function(use)
     "nvim-telescope/telescope.nvim", tag = "0.1.1",
     requires = { {"nvim-lua/plenary.nvim"} }
   }
-  -- Hrsh7th Code Completion Suite
+  -- code completion suite
   use 'hrsh7th/nvim-cmp' 
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-nvim-lua'
@@ -40,7 +40,7 @@ return require("packer").startup(function(use)
   use 'hrsh7th/cmp-path'                              
   use 'hrsh7th/cmp-buffer'                            
   use 'hrsh7th/vim-vsnip'
-  -- git
+  -- git add, update, and remove
   use {
     "lewis6991/gitsigns.nvim",
     config = function()
