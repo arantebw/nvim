@@ -1,5 +1,3 @@
--- [[ init.lua ]]
-
 -- LEADER
 vim.g.mapleader = ","
 vim.g.localleader = "\\"
@@ -15,6 +13,7 @@ require("autotag")
 require("fuzzy-finder")
 require("code-completion")
 require("treesitter-config")
+require("indent-blankline-config")
 --require("night-owl")
 --require("mappings")
 

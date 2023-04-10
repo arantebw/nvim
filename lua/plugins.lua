@@ -6,7 +6,7 @@ end
 
 return require("packer").startup(function(use)
   use "wbthomason/packer.nvim" -- plugins manager
-  use "williamboman/mason.nvim"   
+  use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
   -- status line
@@ -32,13 +32,13 @@ return require("packer").startup(function(use)
     requires = { {"nvim-lua/plenary.nvim"} }
   }
   -- code completion suite
-  use 'hrsh7th/nvim-cmp' 
+  use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-nvim-lua'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
-  use 'hrsh7th/cmp-vsnip'                             
-  use 'hrsh7th/cmp-path'                              
-  use 'hrsh7th/cmp-buffer'                            
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/vim-vsnip'
   -- git add, update, and remove
   use {
@@ -47,4 +47,6 @@ return require("packer").startup(function(use)
       require("gitsigns").setup()
     end
   }
+  -- indentline
+  use "lukas-reineke/indent-blankline.nvim"
 end)
