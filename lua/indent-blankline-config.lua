@@ -6,7 +6,6 @@ vim.g.indent_blankline_char_blankline = "┊"
 
 require("indent_blankline").setup {
   char_highlight_list = {
-    "IndentBlanklineChar"
-
+    "IndentBlanklineChar",
   }
 }
