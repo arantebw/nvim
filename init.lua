@@ -20,3 +20,4 @@ require("indent-blankline-config")
 -- LSPs
 require("gopls")
 require("tsserver")
+require("clangd")

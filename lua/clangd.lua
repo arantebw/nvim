@@ -1,2 +1,2 @@
 lspconfig = require "lspconfig"
-lspconfig.tsserver.setup {}
+lspconfig.clangd.setup {}
