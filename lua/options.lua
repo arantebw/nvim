@@ -27,3 +27,5 @@ opt.tabstop = 2
 -- [[ splits ]]
 opt.splitright = true
 opt.splitbelow = true
+
+opt.swapfile = false
