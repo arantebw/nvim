@@ -5,10 +5,13 @@ if (not status) then
 end
 
 return require("packer").startup(function(use)
-  use "wbthomason/packer.nvim" -- plugins manager
+  -- plugins manager
+  use "wbthomason/packer.nvim"
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
+  -- LSPs
   use "neovim/nvim-lspconfig"
+  use "jose-elias-alvarez/null-ls.nvim"
   -- status line
   use {
     "nvim-lualine/lualine.nvim",
