@@ -14,6 +14,8 @@ require("fuzzy-finder")
 require("code-completion")
 require("treesitter-config")
 require("indent-blankline-config")
+require("null-ls-config")
+require("prettier-config")
 --require("night-owl")
 --require("mappings")
 

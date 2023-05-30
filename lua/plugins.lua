@@ -12,6 +12,7 @@ return require("packer").startup(function(use)
   -- LSPs
   use "neovim/nvim-lspconfig"
   use "jose-elias-alvarez/null-ls.nvim"
+  use "MunifTanjim/prettier.nvim"
   -- status line
   use {
     "nvim-lualine/lualine.nvim",
