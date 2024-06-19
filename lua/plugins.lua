@@ -8,8 +8,8 @@ return require("packer").startup(function(use)
   -- plugins manager
   use "wbthomason/packer.nvim"
   use "williamboman/mason.nvim"
-  use "williamboman/mason-lspconfig.nvim"
   -- LSPs
+  use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
   use "jose-elias-alvarez/null-ls.nvim"
   use "MunifTanjim/prettier.nvim"
@@ -28,8 +28,6 @@ return require("packer").startup(function(use)
   use "windwp/nvim-ts-autotag"
   -- color themes
   use "svrana/neosolarized.nvim"
-  use "Julpikar/night-owl.nvim"
-  use "mhartington/oceanic-next"
   -- fuzzy search
   use {
     "nvim-telescope/telescope.nvim", tag = "0.1.4",
