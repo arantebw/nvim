@@ -1,12 +1,17 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
-local opt = vim.opt
-local g = vim.g
 
 -- general
-opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80"
 
 -- python
-g.lazyvim_python_lsp = "pyright"
-g.lazyvim_python_ruff = "ruff"
+vim.g.lazyvim_python_lsp = "pyright"
+vim.g.lazyvim_python_ruff = "ruff"
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.py",
+  callback = function()
+    vim.lsp.buf.format()
+  end,
+})
