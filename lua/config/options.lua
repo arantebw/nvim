@@ -3,7 +3,7 @@
 -- Add any additional options here
 
 -- general
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 -- python
 vim.g.lazyvim_python_lsp = "pyright"
