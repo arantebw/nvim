@@ -3,3 +3,6 @@
 -- Add any additional options here
 
 vim.opt.colorcolumn = "120"
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
