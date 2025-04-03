@@ -8,3 +8,5 @@ vim.opt.colorcolumn = "120"
 -- Disable netrw on load
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.g.autoformat = false
